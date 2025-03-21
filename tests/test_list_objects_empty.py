@@ -28,7 +28,7 @@ def test_list_objects_empty_bucket(vk_s3):
         with allure.step("Delete bucket"):
             vk_s3.delete_bucket(Bucket=bucket_name)
 
-    with allure.step("Verify listing objects in a deleted bucket raises 'NoSuchBucket' error"):
+    with allure.step("Verify deleted bucket no longer listed"):
         with pytest.raises(ClientError) as exc_info:
             vk_s3.list_objects_v2(Bucket=bucket_name)
 
