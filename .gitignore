@@ -1,0 +1,23 @@
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Pytest cache
+.pytest_cache/
+
+# Allure reports
+allure-results/
+allure-report/
+
+# Virtual environment
+venv/
+
+# IDE settings
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Sensitive data
+tests/config.py
